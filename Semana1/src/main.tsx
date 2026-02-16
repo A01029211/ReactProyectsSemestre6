@@ -9,6 +9,7 @@ import './clases/nose.ts'
 import './clases/import.ts'
 import './Bancos.tsx'
 import Bancos from './Bancos.tsx'
+import './BancosIA.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>

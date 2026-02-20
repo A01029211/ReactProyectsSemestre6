@@ -1,0 +1,82 @@
+.card {
+  background: #1a1a2e;
+  border: 3px solid #333;
+  border-radius: 16px;
+  padding: 24px;
+  max-width: 320px;
+  margin: 0 auto;
+  text-align: center;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+}
+
+.card__id {
+  font-family: "Press Start 2P", monospace;
+  font-size: 10px;
+  color: #555;
+  margin: 0 0 8px;
+}
+
+.card__img {
+  width: 180px;
+  height: 180px;
+  object-fit: contain;
+  image-rendering: pixelated;
+  filter: drop-shadow(0 4px 16px rgba(227,53,13,0.3));
+}
+
+.card__name {
+  font-family: "Press Start 2P", monospace;
+  font-size: 14px;
+  color: #fff;
+  text-transform: capitalize;
+  margin: 12px 0 8px;
+}
+
+.card__types {
+  margin-bottom: 20px;
+}
+
+.card__stats {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: left;
+}
+
+.stat {
+  display: grid;
+  grid-template-columns: 80px 1fr 36px;
+  align-items: center;
+  gap: 8px;
+}
+
+.stat__name {
+  font-family: "Press Start 2P", monospace;
+  font-size: 7px;
+  color: #888;
+  text-transform: capitalize;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.stat__bar-bg {
+  background: #333;
+  border-radius: 999px;
+  height: 8px;
+  overflow: hidden;
+}
+
+.stat__bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #e3350d, #ffcc33);
+  border-radius: 999px;
+  transition: width 0.5s ease;
+}
+
+.stat__val {
+  font-family: "Press Start 2P", monospace;
+  font-size: 8px;
+  color: #ccc;
+  text-align: right;
+}

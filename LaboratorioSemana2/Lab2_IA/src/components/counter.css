@@ -1,0 +1,88 @@
+.counter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  background: #1a1a2e;
+  border: 3px solid #e3350d;
+  border-radius: 12px;
+  padding: 20px 30px;
+  width: fit-content;
+  margin: 0 auto 24px;
+}
+
+.counter__label {
+  font-family: "Press Start 2P", monospace;
+  font-size: 10px;
+  color: #e3350d;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.counter__controls {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.counter__btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 2px solid #e3350d;
+  background: transparent;
+  color: #e3350d;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background 0.15s;
+  line-height: 1;
+}
+
+.counter__btn:hover:not(:disabled) {
+  background: #e3350d;
+  color: #fff;
+}
+
+.counter__btn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.counter__value {
+  font-family: "Press Start 2P", monospace;
+  font-size: 24px;
+  color: #fff;
+  min-width: 60px;
+  text-align: center;
+}
+
+.counter__actions {
+  display: flex;
+  gap: 10px;
+}
+
+.counter__search,
+.counter__reset {
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: none;
+  font-family: "Press Start 2P", monospace;
+  font-size: 8px;
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+
+.counter__search {
+  background: #e3350d;
+  color: #fff;
+}
+
+.counter__reset {
+  background: #333;
+  color: #aaa;
+}
+
+.counter__search:hover,
+.counter__reset:hover {
+  opacity: 0.8;
+}

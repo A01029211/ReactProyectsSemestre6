@@ -1,0 +1,13 @@
+.capsule {
+  display: inline-block;
+  padding: 4px 14px;
+  border-radius: 999px;
+  font-family: "Press Start 2P", monospace;
+  font-size: 8px;
+  color: #fff;
+  text-transform: capitalize;
+  letter-spacing: 0.05em;
+  box-shadow: 0 2px 0 rgba(0,0,0,0.25);
+  margin: 2px;
+  user-select: none;
+}

@@ -42,7 +42,7 @@ export const SimpleForm = () => {
         />
 
         {
-            (username === 'Secret' ) && <Message />
+            (username === '' ) && <Message />
         }
     </>
 )
